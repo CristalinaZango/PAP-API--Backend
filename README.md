@@ -12,7 +12,54 @@ Projeto de API REST para gerenciamento de empresas, serviços, logs e usuários 
 - Multer para upload de arquivos
 
 ## 📂 Estrutura do Projeto
-/src ├── app.js # Configuração principal do Express ├── server.js # Inicialização do servidor ├── config/ # Configurações do banco de dados │ └── database.js # Configuração do Sequelize ├── controllers/ # Lógica de controle das rotas │ ├── authController.js │ ├── companyController.js │ ├── logController.js │ ├── serviceController.js │ └── userController.js ├── middlewares/ # Middlewares da aplicação │ └── auth.js # Middleware de autenticação JWT ├── migrations/ # Arquivos de migração do banco de dados │ ├── config/ # Configuração do banco para migrações │ ├── migrations/ # Scripts de migração │ └── models/ # Modelos para migrações ├── models/ # Modelos do banco de dados │ ├── Company.js │ ├── Log.js │ ├── Service.js │ ├── User.js │ └── index.js # Exporta todos os modelos ├── routes/ # Rotas da API │ └── index.js # Arquivo principal de rotas ├── scripts/ # Scripts utilitários │ └── seedAdmin.js # Script para criar um usuário admin ├── utils/ # Utilitários da aplicação │ └── logHelper.js # Função para criar logs └── uploads/ # Diretório para uploads de arquivos
+/src 
+  ├── app.js # Configuração principal do Express 
+  ├── server.js # Inicialização do servidor 
+  ├── config/ # Configurações do banco de dados 
+   │ 
+   └── database.js # Configuração do Sequelize 
+  ├── controllers/ # Lógica de controle das rotas 
+   │
+   ├── authController.js 
+   │ 
+   ├── companyController.js 
+   │ 
+   ├── logController.js 
+   │ 
+   ├── serviceController.js 
+   │ 
+   └── userController.js 
+  ├── middlewares/ # Middlewares da aplicação 
+   │ 
+   └── auth.js # Middleware de autenticação JWT 
+  ├── migrations/ # Arquivos de migração do banco de dados 
+   │ 
+   ├── config/ # Configuração do banco para migrações 
+   │ 
+   ├── migrations/ # Scripts de migração 
+   │ 
+   └── models/ # Modelos para migrações 
+  ├── models/ # Modelos do banco de dados 
+   │ 
+   ├── Company.js 
+   │ 
+   ├── Log.js 
+   │ 
+   ├── Service.js 
+   │ 
+   ├── User.js 
+   │ 
+   └── index.js # Exporta todos os modelos 
+  ├── routes/ # Rotas da API 
+   │ 
+   └── index.js # Arquivo principal de rotas 
+  ├── scripts/ # Scripts utilitários 
+   │ 
+   └── seedAdmin.js # Script para criar um usuário admin 
+  ├── utils/ # Utilitários da aplicação 
+   │ 
+   └── logHelper.js # Função para criar logs 
+  └── uploads/ # Diretório para uploads de arquivos
 
 ## ⚙️ Instalação
 1. Clone o repositório:
@@ -88,9 +135,9 @@ O sistema utiliza JWT para autenticação. Para acessar rotas protegidas, inclua
 Authorization: Bearer <seu-token-jwt/>
 
 
-## npm run dev: Inicia o servidor em modo de desenvolvimento com nodemon.
-## npm start: Inicia o servidor em modo de produção.
-## npx sequelize-cli db:migrate: Executa as migrações do banco de dados.
+- npm run dev: Inicia o servidor em modo de desenvolvimento com nodemon.
+- npm start: Inicia o servidor em modo de produção.
+- npx sequelize-cli db:migrate: Executa as migrações do banco de dados.
 
 
 
