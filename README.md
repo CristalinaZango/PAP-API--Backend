@@ -25,13 +25,13 @@ npm install
 
 3. Configure o banco de dados no arquivo .env:
 
-DB_USER=postgres
-DB_HOST=localhost
-DB_NAME=pap_deuma
-DB_PASSWORD=1234567890
-DB_PORT=5432
-JWT_SECRET=kjahSDKUHA8726wydgAHSYGFYgashdGH==12312
-JWT_EXPIRATION=1h
+- DB_USER=postgres
+- DB_HOST=localhost
+- DB_NAME=pap_deuma
+- DB_PASSWORD=1234567890
+- DB_PORT=5432
+- JWT_SECRET=kjahSDKUHA8726wydgAHSYGFYgashdGH==12312
+- JWT_EXPIRATION=1h
 
 4. Execute as migrações para criar as tabelas no banco de dados:
 
@@ -47,46 +47,45 @@ npm run dev
 
 ## Autenticação
 
-POST /api/login: Login de usuários.
-Usuários
+- POST /api/login: Login de usuários.
 
 ## User
-GET /api/users: Listar todos os usuários.
-POST /api/users: Criar um novo usuário.
-PUT /api/users/:id: Atualizar um usuário.
-DELETE /api/users/:id: Remover um usuário.
+- GET /api/users: Listar todos os usuários.
+- POST /api/users: Criar um novo usuário.
+- PUT /api/users/:id: Atualizar um usuário.
+- DELETE /api/users/:id: Remover um usuário.
 Empresas
 
 ## Empresas
-GET /api/companies: Listar todas as empresas.
-POST /api/companies: Criar uma nova empresa.
-PUT /api/companies/:id: Atualizar uma empresa.
-DELETE /api/companies/:id: Remover uma empresa.
+- GET /api/companies: Listar todas as empresas.
+- POST /api/companies: Criar uma nova empresa.
+- PUT /api/companies/:id: Atualizar uma empresa.
+- DELETE /api/companies/:id: Remover uma empresa.
 Serviços
 
 ## Serviços
-GET /api/services: Listar todos os serviços.
-POST /api/services: Criar um novo serviço.
-PUT /api/services/:id: Atualizar um serviço.
-DELETE /api/services/:id: Remover um serviço.
+- GET /api/services: Listar todos os serviços.
+- POST /api/services: Criar um novo serviço.
+- PUT /api/services/:id: Atualizar um serviço.
+- DELETE /api/services/:id: Remover um serviço.
 Logs
 
 ## Logs
-GET /api/logs: Listar todos os logs.
-GET /api/logs/:id: Buscar log por ID.
+- GET /api/logs: Listar todos os logs.
+- GET /api/logs/:id: Buscar log por ID.
 
 ## Tecnologias Utilizadas
-Node.js: Ambiente de execução JavaScript.
-Express: Framework para construção de APIs.
-Sequelize: ORM para interação com o banco de dados.
-PostgreSQL: Banco de dados relacional.
-Multer: Middleware para upload de arquivos.
-JWT: Autenticação baseada em tokens.
+- Node.js: Ambiente de execução JavaScript.
+- Express: Framework para construção de APIs.
+- Sequelize: ORM para interação com o banco de dados.
+- PostgreSQL: Banco de dados relacional.
+- Multer: Middleware para upload de arquivos.
+- JWT: Autenticação baseada em tokens.
 
 ## 🔒 Autenticação
 O sistema utiliza JWT para autenticação. Para acessar rotas protegidas, inclua o token no header da requisição:
 
-Authorization: Bearer <seu-token-jwt>
+Authorization: Bearer <seu-token-jwt/>
 
 
 ## npm run dev: Inicia o servidor em modo de desenvolvimento com nodemon.
